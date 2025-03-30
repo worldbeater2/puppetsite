@@ -37,7 +37,7 @@ export default function Homeapp() {
 
         <div className="w-[900px]   h-[700px] ">
           <Image
-            src="/10.png"
+            src="/13.png"
             alt="logo"
             width={900}
             height={800}
