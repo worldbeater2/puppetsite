@@ -8,7 +8,7 @@ export default function Homeapp() {
   return (
     <>
       <Navbar />
-      <div className="flex  w-screen h-screen px-14 justify-between">
+      <div className="flex  w-screen h-screen grow px-14 justify-between">
         <div className="flex-col my-28 mx-24">
           <div className="font-parkinsans text-4xl tracking-wide leading-12 w-[450px]">
             Helping people make the world a better place through quality
@@ -91,7 +91,7 @@ export default function Homeapp() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-screen h-screen">
+      <div className="flex flex-col w-screen ">
         <div className="flex p-32  items-start">
           <div className="w-[600px] flex flex-col">
             <div className="text-4xl font-parkinsans font-base">
