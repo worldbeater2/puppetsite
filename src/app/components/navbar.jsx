@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MonitorDownIcon } from "lucide-react";
 export default function Navbar() {
   return (
@@ -27,10 +28,10 @@ export default function Navbar() {
             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Blogs</a>
+              <a>About</a>
             </li>
             <li>
-              <a>About</a>
+              <a>Blog</a>
             </li>
             <li>
               <a>Projects</a>
@@ -40,20 +41,23 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="hover:cursor-pointer opacity-80">
-          <Image src="/logoanother.svg" alt="logo" width={140} height={100} />
-        </div>
-
+        <Link href="/">
+          <div className="hover:cursor-pointer opacity-80">
+            <Image src="/logoanother.svg" alt="logo" width={140} height={100} />
+          </div>
+        </Link>
         {/* change here to image  */}
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 text-base">
           <li>
-            <a>Blogs</a>
+            <p>About</p>
           </li>
-          <li>
-            <a>About</a>
-          </li>
+          <Link href="/blog">
+            <li>
+              <a>Blog</a>
+            </li>
+          </Link>
           <li>
             <a>Projects</a>
           </li>

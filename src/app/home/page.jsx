@@ -162,6 +162,8 @@ export default function Homeapp() {
             <div className="text-2xl font-medium font-parkinsans mt-3 ">
               useEffect vs useLayoutEffect
             </div>
+          
+            
           </div>
         </div>
       </div>
